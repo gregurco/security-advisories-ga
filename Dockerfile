@@ -9,5 +9,5 @@ LABEL "repository"="http://github.com/gregurco/security-advisories-ga"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Vlad Gregurco <gregurco.vlad@gmail.com>"
 
-ADD entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
